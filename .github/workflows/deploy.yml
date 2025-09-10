@@ -3,21 +3,20 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # change to 'master' if that is your default branch
+      - main  # change to 'master' if your default branch is master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public    # folder containing your index.html
-          force_orphan: true       # forces branch creation if it doesn't exist
+          publish_dir: ./public        # folder containing your index.html
+          force_orphan: true           # ensures branch is created if missing
+          allow_empty_commit: true     # allows push even if no changes
