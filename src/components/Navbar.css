@@ -1,0 +1,320 @@
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+.logo{
+  height: 40px;
+  width: 150px;
+}
+.colo{
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.ico{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.navbar .collapse.show {
+  background-color: #2a2a2d; /* Change to your desired color */
+}
+
+/* Optional: change nav item link color too */
+.navbar .collapse.show .nav-link {
+  color: #fff;
+  background-color: rgba(255, 228, 196, 0);
+}
+.nav-link:hover {
+  color: #f8d210 !important; /* change to your desired hover color */
+  text-decoration: underline; /* optional effect */
+  transition: color 0.3s ease;
+}
+.carousel-caption {
+  background-color: rgba(240, 255, 255, 0.51);/* semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;              /* Vertically center */
+  left: 50%;             /* Horizontally center */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  z-index: 10;
+  width: 60%;            /* Optional: makes text wrap nicely on small screens */
+}
+.carousel-caption h5
+ {
+  background: linear-gradient(45deg, #021762, #ea1a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+.carousel-caption p {
+  background: linear-gradient(45deg, #034c51, #680343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+}
+
+
+.size{
+    max-width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border:2px solid rgb(240, 239, 239);
+    box-shadow: #034c51 2px 2px 2px 2px;
+    background-color: whitesmoke;
+}
+.bt{
+    background-color: #f7eb01;
+    color: #82044d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.bt:hover {
+    background-color: #de07a9d4;
+    color: #f8ec06;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .bt{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bt{
+    font-size: 0.8rem;
+  }
+
+}
+.abo{
+    color: #0e0669fd;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(45deg, #021762, #ea1a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.para{
+    color: #151516fd;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+   background: linear-gradient(45deg, #034c51, #680343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+}
+@media (max-width: 768px) {
+  .size{
+    height:1200px ;
+  }
+}
+
+@media (max-width: 576px) {
+  .size{
+    height: 1100px ;
+  }
+
+}
+.imag{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: #034c51 2px 2px 2px 2px;
+    margin-top: 50px;
+}
+.scrollable-content {
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* Optional scroll styling */
+.scrollable-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #6e7378;
+  border-radius: 4px;
+}
+.course{
+  color: #0e0669fd;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    background: linear-gradient(45deg, #021762, #ea1a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0e0669fd;
+  text-align: center;
+}
+.card-text{
+  color: #151516fd;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+   background: linear-gradient(45deg, #034c51, #680343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.but{
+  background-color: #f7eb01;
+  color: #82044d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.but:hover {
+  background-color: #de07a9d4;
+  color: #f8ec06;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.gallery-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn.active {
+  background-color: #0ba994;
+  color: white;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+}
+.buto{
+  background: linear-gradient(45deg, #eddd04, #dc058d);
+  color: #45041c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.buto:hover {
+  background: linear-gradient(45deg, #dc058d, #eddd04);
+  color: #f8ec06;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.contac{
+  color: #0e0669fd;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  background: linear-gradient(45deg, #021762, #ea1a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gallery{
+  color: #0e0669fd;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  background: linear-gradient(45deg, #021762, #ea1a9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.form-label {
+  font-weight: bold;
+  background: linear-gradient(45deg, #034c51, #680343);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.foot{
+  background-color: #2a2a2d;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.lin{
+  
+  text-decoration: none;
+
+}
