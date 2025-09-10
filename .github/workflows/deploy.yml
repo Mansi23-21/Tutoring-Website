@@ -1,4 +1,4 @@
-name: Deploy Website
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -6,17 +6,34 @@ on:
       - main  # change to 'master' if your default branch is master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # use the Node version your project needs
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build the React app
+      - name: Build
+        run: npm run build
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public        # folder containing your index.html
-          force_orphan: true           # ensures branch is created if missing
-          allow_empty_commit: true     # allows push even if no changes
+          publish_dir: ./build
+          force_orphan: true
+          allow_empty_commit: true
+
